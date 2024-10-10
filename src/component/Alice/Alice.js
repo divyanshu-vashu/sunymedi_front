@@ -27,7 +27,7 @@ const Alice = () => {
         try {
             if (!aliceDetails.alice.includes(" ")) {
                 setMsg("Loading...")
-                const url = 'http://localhost:5000/api/alice-auth';
+                const url = 'https://sunymedi-backend.onrender.com/api/alice-auth';
                 const { data: res } = await axios.post(url, aliceDetails);
                 console.log(res);
                 setMsg("New Alice created successfully.");

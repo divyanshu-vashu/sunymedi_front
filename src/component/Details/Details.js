@@ -14,7 +14,7 @@ const Details = () => {
     useEffect(() => {
         const getUserDetail = async () => {
             try {
-                const { data } = await axios.get(`http://localhost:5000/api/alice-details/details/${alice}`);
+                const { data } = await axios.get(`https://sunymedi-backend.onrender.com/api/alice-details/details/${alice}`);
                 setAliceDetails(data);
             } catch (error) {
                 console.log(error);
@@ -31,7 +31,7 @@ const Details = () => {
         e.preventDefault();
         
         try {
-            const url = `http://localhost:5000/api/alice/add-transaction/${alice}`;
+            const url = `https://sunymedi-backend.onrender.com/api/alice/add-transaction/${alice}`;
             const { data: res } = await axios.put(url, data);
             console.log(res);
             setMsg("Date Added Successfully.");

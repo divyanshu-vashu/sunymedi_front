@@ -15,7 +15,7 @@ const TransactionViewer = () => {
         const getUserDetail = async () => {
             try {
                 setMsg("Please wait...")
-                const { data } = await axios.get(`http://localhost:5000/api/details`);
+                const { data } = await axios.get(`https://sunymedi-backend.onrender.com/api/details`);
                 setDetails(data);
                 setMsg("Go ahead!")
             } catch (error) {

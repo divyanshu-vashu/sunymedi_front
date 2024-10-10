@@ -21,7 +21,7 @@ const Mainpage = () => {
         e.preventDefault();
             try {
                 setMsg("Loading...")
-                const { data } = await axios.get(`http://localhost:5000/api/alice-details/details/${aliceNumber}`);
+                const { data } = await axios.get(`https://sunymedi-backend.onrender.com/api/alice-details/details/${aliceNumber}`);
                 if(data)
                 {
                     sessionStorage.setItem('alice',aliceNumber)
