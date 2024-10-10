@@ -1,0 +1,137 @@
+.transaction-viewer {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.input-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.input-section label {
+    font-size: 16px;
+    color: #333;
+}
+
+.input-section input[type="date"] {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+    outline: none;
+    margin-right: 10px;
+}
+
+.input-section button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    border: none;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.input-section button:hover {
+    background-color: #0056b3;
+}
+
+.message {
+    text-align: center;
+    font-size: 16px;
+    color: red;
+    margin-top: 10px;
+}
+
+.transaction-list {
+    margin-top: 20px;
+    overflow-x: auto;
+}
+
+.transaction-list table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.transaction-list th, .transaction-list td {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+.transaction-list th {
+    background-color: #f1f1f1;
+    font-weight: bold;
+    color: #333;
+}
+
+.transaction-list td {
+    background-color: white;
+    color: #333;
+}
+
+.transaction-list tr:nth-child(even) td {
+    background-color: #f9f9f9;
+}
+
+.transaction-list tr:hover td {
+    background-color: #f1f1f1;
+}
+
+.transaction-list button {
+    padding: 8px 16px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.transaction-list button:hover {
+    background-color: #218838;
+}
+
+@media (max-width: 768px) {
+    .input-section {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .input-section button {
+        margin-top: 10px;
+        width: 100%;
+    }
+
+    .transaction-list table {
+        font-size: 14px;
+    }
+}
+.back-button {
+    background: none;
+    border: none;
+    font-size: 18px;
+    color: #007bff;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.back-button:hover {
+    color:white;
+}
