@@ -2,14 +2,14 @@ import React, { useState, useEffect } from 'react';
 import * as XLSX from 'xlsx';
 import './TransactionViewer.css';
 import axios from 'axios';
-import { useNavigate } from 'react-router-dom';  // Import useNavigate
+import { useNavigate } from 'react-router-dom';  
 
 const TransactionViewer = () => {
     const [date, setDate] = useState('');
     const [filteredTransactions, setFilteredTransactions] = useState([]);
     const [msg, setMsg] = useState('');
     const [details, setDetails] = useState([]); 
-    const navigate = useNavigate(); // Initialize the navigate hook
+    const navigate = useNavigate(); 
 
     useEffect(() => {
         const getUserDetail = async () => {
@@ -17,7 +17,7 @@ const TransactionViewer = () => {
                 setMsg("Please wait...")
                 const { data } = await axios.get(`http://localhost:5000/api/details`);
                 setDetails(data);
-                setMsg("")
+                setMsg("Go ahead!")
             } catch (error) {
                 console.log(error);
             }
