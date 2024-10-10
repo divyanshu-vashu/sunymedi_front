@@ -1,0 +1,80 @@
+.mainpage-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 2px solid #007bff;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+}
+
+.logout-button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.logout-button:hover {
+    background-color: #c82333;
+}
+
+.create-alice-form {
+    margin-top: 20px;
+}
+
+.create-alice-form h2 {
+    margin-bottom: 20px;
+}
+
+.create-alice-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.create-alice-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.submit-button {
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.submit-button:hover {
+    background-color: #218838;
+}
+
+p {
+    color: green;
+    font-size: 16px;
+    margin-top: 10px;
+    text-align: center;
+}
+.back-button {
+    background: none;
+    border: none;
+    font-size: 18px;
+    color: #007bff;
+    cursor: pointer;
+    margin-bottom: 20px;
+    display: block;
+}
+
+.back-button:hover {
+    color: #0056b3;
+}

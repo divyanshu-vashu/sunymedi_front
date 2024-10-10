@@ -1,0 +1,90 @@
+/* Mainpage.css */
+
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.mainpage-container {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #007bff;
+}
+
+.logout-button, .add-button, .alice-number-submit {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.logout-button {
+    background-color: #dc3545;
+    color: #fff;
+}
+
+.logout-button:hover {
+    background-color: #c82333;
+}
+
+.add-button {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.add-button:hover {
+    background-color: #0056b3;
+}
+
+.alice-number-form {
+    margin-top: 20px;
+}
+
+.alice-number-label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+
+.alice-number-input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.alice-number-input:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+p {
+    color: #dc3545; /* Red for error messages */
+    text-align: center;
+    margin: 10px 0;
+}
+
+.alice-number-submit {
+    background-color: #28a745;
+    color: #fff;
+}
+
+.alice-number-submit:hover {
+    background-color: #218838;
+}
